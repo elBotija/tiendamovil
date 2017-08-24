@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tienda Mobil</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+    <!-- Temporary navbar container fix -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            Menu <i class="fa fa-bars"></i>
+        </button>
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Tienda Mobil</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#download">Descargar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Posibilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+                            <h1>Tenga una aplicacion de pedidos sencilla, amigable y potente. Para vender de una forma sensilla y eficaz. Incremente su mercado y sus ganancias.</h1>
+                            <a href="#download" class="btn btn-outline btn-xl">Empezá ya, el primer mes gratis!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img src="img/capturaHome1.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="download bg-primary text-center" id="download">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h2 class="section-heading">Descubre todo el poder de Tienda Mobil</h2>
+                    <p>La aplicación esta disponible para todos los dispositivos.Descargala y comenzá ahora!</p>
+                    <div class="badges">
+                        <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+                        <!-- <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Más simple, directo</h2>
+                <p class="text-muted">Mira todo lo que se puede hacer!</p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img id="changeIma" src="img/busqueda.jpg" class="img-fluid" alt=""> </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="feature-item active"  onClick="cambiaIma(this,'busqueda');">
+                                    <!-- <i class="icon-screen-smartphone text-primary"></i> -->
+                                    <h3>Busqueda</h3>
+                                    <p class="text-muted">Facil, intuitivo, filtros por categorias o búsqueda por nombre o código de producto!</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-item" onClick="cambiaIma(this,'pedido');">
+                                    <!-- <i class="icon-camera text-primary"></i> -->
+                                    <h3>Pedido</h3>
+                                    <p class="text-muted">Vea el detalle de compra, sume o reste cantidades. También reciba una observación, ideal para solicitar articulos fuera de campaña</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="feature-item"  onClick="cambiaIma(this,'mispedidos');">
+                                    <!-- <i class="icon-present text-primary"></i> -->
+                                    <h3>Mis Pedidos</h3>
+                                    <p class="text-muted">Los revendedores podrán ver sus ventas por cada campaña, como así también los pedidos realizados junto con sus precios.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-item"  onClick="cambiaIma(this,'notificacion');">
+                                    <!-- <i class="icon-lock-open text-primary"></i> -->
+                                    <h3>Notificaciones</h3>
+                                    <p class="text-muted">Mantené siempre informado a tus revendedores con nuestras notificaciones push, nunca esta demas avisar cuando un pedido esta listo para retirar.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-content">
+            <div class="container">
+                <h2>Deja de esperar.<br>Empeza a vender.</h2>
+                <a href="#contact" class="btn btn-outline btn-xl">Empezar ahora!</a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+
+    <section class="contact bg-primary" id="contact">
+        <div class="container">
+            <h2>Contactanos <i class="fa fa-heart"></i></h2>
+
+            <form name="contacto" id="contacto" onsubmit="return sendReply();">
+
+                <input type="hidden" id="reply-message-id" />
+
+                    <input type="text" class="form-control" id="reply-to"  />
+                    <input type="text" class="form-control disabled" id="reply-subject"  />
+                    <textarea class="form-control" id="reply-message" placeholder="Message" rows="10" required></textarea>
+
+
+
+<!--                     <div class="input_text">
+                        <input type="text" name="nombre" id="nombre" class="formato" size="30" value="" placeholder="Nombre" />
+                        <input type="text" name="telefono" id="telefono" class="formato" size="30" value="" placeholder="Telefono" />
+                        <input type="text" name="email" id="email" class="formato" size="30" value="" placeholder="Mail" />
+                    </div>
+                    <div class="text_area">
+                        <textarea name="textarea1" id="textarea1" class="formato" rows="9" placeholder="Su consulta no molesta."></textarea>
+                    </div>
+ -->                    <div id="contacto_btsubmit2">
+                        <button type="submit" name="submit" class="btn btn-outline btn-xl">Enviar</button>
+                    </div>
+                </form>
+
+            <!-- <ul class="list-inline list-social">
+                <li class="list-inline-item social-twitter">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item social-facebook">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item social-google-plus">
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+            </ul> -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2017 TiendaMobil. Todos los derechos reservados.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#">Privacy</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">Terms</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.min.js"></script>
+    <script src="js/sendGoogle.js"></script>
+
+    <script type="text/javascript">
+
+        function cambiaIma(elem, url){
+            $("#changeIma").attr("src","img/"+url+".jpg");
+            $(".feature-item.active").removeClass("active");
+            $(elem).addClass("active");
+        }
+
+    </script>
+</body>
+
+</html>
